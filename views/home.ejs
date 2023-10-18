@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Lista de Jogadores</h1>
+
+    <ul>
+        <% for(let jogador of jogadores) { %>
+            <li>
+                <h2><%= jogador.nome %></h2>
+                <p>Idade: <%= jogador.idade %></p>
+                <p>Posição: <%= jogador.posicao %></p>
+                <p>Clube: <%= jogador.clube %></p>
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>
